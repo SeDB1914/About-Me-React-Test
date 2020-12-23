@@ -7,10 +7,12 @@ import SedComponent from './components/SedComponent';
 import TestState from './components/TestState';
 import Games from './components/Games';
 import Container from 'react-bootstrap/Container';
-import Jumbotron from 'react-bootstrap/Jumbotron'
-
-
+import Jumbotron from 'react-bootstrap/Jumbotron';
+import Sed3 from './assets/Sed3.png';
+import Image from 'react-bootstrap/Image';
 import Home from './components/Home';
+import Row from 'react-bootstrap/Row';
+
 
 class Routes extends Component{
     render(){
@@ -19,13 +21,16 @@ class Routes extends Component{
                 <Container className="p-3">  
                 <NavBar />
                 <hr />
-                <Jumbotron fluid> 
+                <Row>
+                <Image alt="" src={Sed3} width ="350" height ="350" />
+                <Jumbotron>            
                 <Route name="Home" exact path="/home" component={Home} />
                 <Route name="SedComponent" exact path="/aboutSeDB" component={SedComponent}/>
                 <Route name="FunFact" exact path="/funfact" component={FunFact}/>
                 <Route name="TestState" exact path="/Test" component={TestState}/>
                 <Route name="Games" exact path="/games"  component={Games} />
                 </Jumbotron>
+                </Row>
                 <hr />
                 <Footer />
                 

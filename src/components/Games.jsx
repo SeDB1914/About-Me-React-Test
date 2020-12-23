@@ -19,7 +19,7 @@ class Games extends Component {
                         <Card.Body>
                             <Card.Title>TicTacToe</Card.Title>
                              <TicTacToe />
-                             <Card.Text> Tic-Tac-Toe coming soon</Card.Text>
+                             <Card.Text> Care for a quick game?</Card.Text>
                         </Card.Body>
     
                     </Card>

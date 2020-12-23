@@ -7,7 +7,7 @@ class NavBar extends Component {
       return(
         <Navbar variant="light" expand="lg" bg="dark" className="mx-auto" >
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Link to="/" >Home </Link> | <span />
+          <Link to="/home" >Home </Link> | <span />
           <Link to="/aboutSeDB">About SeDB</Link> | <span />
           <Link to="/funfact">Fun Facts</Link> | <span />
           <Link to="/Test">Test</Link> | <span />

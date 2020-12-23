@@ -40,7 +40,6 @@ handleClick(i) {
           );
         }
   
-
     render() {
         const winner = calculateWinner(this.state.squares);
         let status;
