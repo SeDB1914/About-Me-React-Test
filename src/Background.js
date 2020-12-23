@@ -1,3 +1,5 @@
+
+
 var delay = 1000; // 1000ms = 1 second
 
 // Generate a random RGB color

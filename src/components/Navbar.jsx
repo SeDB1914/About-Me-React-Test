@@ -1,18 +1,20 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
+import Navbar from 'react-bootstrap/Navbar'
 
-class Navbar extends Component {
+class NavBar extends Component {
     render(){
       return(
-        <div className="nav">
-          <Link to="/home" >Home </Link> | <span />
+        <Navbar variant="light" expand="lg" bg="dark" className="mx-auto" >
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Link to="/" >Home </Link> | <span />
           <Link to="/aboutSeDB">About SeDB</Link> | <span />
           <Link to="/funfact">Fun Facts</Link> | <span />
           <Link to="/Test">Test</Link> | <span />
           <Link to="/Games">Games</Link>  <span />
-        </div>
+        </Navbar>
       );
     }
   }
 
-  export default Navbar;
+  export default NavBar;
